@@ -84,12 +84,16 @@
 .header__menu-button {
     display: none;
     position: relative;
+    width: 48px;
     height: 48px;
+    background-image: url('/img/menu.svg');
 }
 .header__close-menu-button {
     display: none;
     align-self: end;
+    width: 48px;
     height: 48px;
+    background-image: url('/img/close.svg');
 }
 
 @media screen and (max-width: 1439px) {

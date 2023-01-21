@@ -35,6 +35,7 @@
 .footer__info-instagram {
     width: 32px;
     height: 32px;
+    background-image: url('/img/instagram.svg')
 }
 @media screen and (max-width: 1439px) and (min-width: 1040px) {
     .footer {
