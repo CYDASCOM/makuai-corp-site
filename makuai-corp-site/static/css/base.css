@@ -9,7 +9,7 @@
     --makuai-yellow: #F8BF2D;
     --makuai-yellow2: #F3CC65;
     --makuai-gray: #F9F9F9;
-    --makuai-gradiation: linear-gradient(to right, #45D1D1, #ED5D5D, #F8BF2D) 1;
+    --makuai-gradiation: linear-gradient(to right, var(--makuai-cyan), var(--makuai-red), var(--makuai-yellow)) 1;
 }
 
 /* 標準 */
