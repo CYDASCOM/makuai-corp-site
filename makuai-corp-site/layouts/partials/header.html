@@ -1,0 +1,53 @@
+<header class="header">
+    <span class="header__border header__border--left"></span>
+    <span class="header__border header__border--bottom"></span>
+    <span class="header__border header__border--right"></span>
+    <div class="header__logo">
+        <img class="header__logo-img" src="/images/layouts/header/makuai_logo.svg">
+        <div class="header__logo-text">
+            <p class="header__logo-name">CODE BOOST</p>
+            <p class="header__logo-catch">高山市の</p>
+            <p class="header__logo-catch">高校生向けITスクール</p>
+        </div>
+    </div>
+    <nav id="headerNav" class="header__nav">
+        <ul type="none" id="headerNavList" class="header__nav-list">
+            <button id="closeMenuButton" class="header__close-menu-button"><img src="/images/layouts/header/close.svg"></button>
+            <li id="headerNavItem" class="header__nav-item"><a href="/" class="header__nav-link header__nav-link--top">ホーム</a></li>
+            <li id="headerNavItem" class="header__nav-item"><a href="/curriculum" class="header__nav-link header__nav-link--curriculum">カリキュラム</a></li>
+            <li id="headerNavItem" class="header__nav-item"><a href="/introduction" class="header__nav-link header__nav-link--introduction">学生の紹介</a></li>
+            <li id="headerNavItem" class="header__nav-item"><a href="/studentrecruit" class="header__nav-link">エンジニアをお探しの企業様</a></li>
+            <li id="headerNavItem" class="header__nav-item"><a href="/support" class="header__nav-link header__nav-link--support">支援</a></li>
+            <li id="headerNavItem" class="header__nav-item"><a href="/news" class="header__nav-link header__nav-link--news">ニュース</a></li>
+            <li id="headerNavItem" class="header__nav-item"><a href="/contact" class="header__nav-link header__nav-link--contact">問い合わせ</a></li>
+            <li id="headerNavItem" class="header__nav-item"><a href="/company" class="header__nav-link header__nav-link--company">会社概要</a></li>
+        </ul>
+    </nav>
+    <button id="menuButton" class="header__menu-button"><img src="/images/layouts/header/menu.svg"></button>
+</header>
+<script>
+    const menuButton = document.querySelector('#menuButton');
+    const closeMenuButton = document.querySelector('#closeMenuButton');
+    const headerNav = document.querySelector('#headerNav');
+    const headerNavList = document.querySelector('#headerNavList');
+    const headerNavItem = document.querySelectorAll('#headerNavItem');
+
+    function switchMenu(time) {
+        headerNav.classList.toggle('header__nav--active');
+        headerNavList.classList.toggle('header__nav-list--active');
+        menuButton.classList.toggle('header__menu-button--active');
+        setTimeout(function() {
+            closeMenuButton.classList.toggle('header__close-menu-button--active');
+            headerNavItem.forEach(function(item) {
+                item.classList.toggle('header__nav-item--active');
+            });
+        }, time);
+    }
+
+    menuButton.addEventListener('click', function() {
+        switchMenu(200);
+    });
+    closeMenuButton.addEventListener('click', function() {
+        switchMenu(0);
+    });
+</script>

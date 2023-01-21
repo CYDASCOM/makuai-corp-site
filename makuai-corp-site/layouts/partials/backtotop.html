@@ -1,0 +1,12 @@
+<button id="backtotop" class="backtotop">
+    <img src="/images/layouts/backtotop/arrow.svg">
+</button>
+<script>
+    const backtotop = document.querySelector('#backtotop');
+    backtotop.addEventListener('click', function() {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
