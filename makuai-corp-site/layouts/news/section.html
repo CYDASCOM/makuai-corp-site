@@ -1,0 +1,14 @@
+{{ define "main" }}
+<head>
+    <link rel="stylesheet" href="/css/news_section.css">
+</head>
+<div class="news">
+    <h1 class="news__heading">ニュース</h1>
+    <ul type="none" class="news__list">
+        {{ $paginator := .Paginate (where .Pages "Type" "news") }}
+        {{ range $paginator.Pages }}
+            {{ .Render "li" }}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

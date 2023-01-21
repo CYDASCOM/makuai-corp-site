@@ -1,0 +1,273 @@
+.nav-studentrecruit::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(to right, rgba(69, 209, 209, 0.2) 0%, rgba(237, 93, 93, 0.2) 51.56%, rgba(248, 191, 45, 0.2) 100%);
+    background-repeat: no-repeat;
+    background-size: auto 8px;
+    background-position: 0px 28px;
+    opacity: 1;
+}
+.section__title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+}
+.section__text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 200%;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.section__number {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 64px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #45D1D1 0%, #ED5D5D 51.56%, #F8BF2D 100%);
+}
+.section__link {
+    position: relative;
+    display: block;
+    padding: 12px 0 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    font-feature-settings: 'palt' on;
+    color: #333333;
+    background: rgba(255, 255, 255, 0.5);
+    border-width: 1px 1px 4px 1px;
+    border-style: solid;
+    border-color: #333333;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1), inset -6px -9px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    text-decoration: none;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.section__link::after {
+    content: "";
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+.section__link:hover::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(105deg, rgba(248,191,45,0.2) 0%, rgba(237,93,93,0.2) 16%, rgba(69,209,209,0.2) 32%, rgba(255,255,255,0.2) 50%, rgba(69,209,209,0.2) 68%, rgba(237,93,93,0.2) 84%, rgba(248,191,45,0.2) 100%);
+    content: "";
+    border-radius: 8px;
+    opacity: 1;
+}
+.section__number::after {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 94px;
+    height: 94px;
+    border-radius: 47px;
+    background: #FFFFFF;
+    content: "1";
+    line-height: 94px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #333333;
+}
+.section-1 {
+    padding: 188px 0 112px;
+}
+.section-1__title--top {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.section-1__title--top::after {
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    right: 2px;
+    top: 44px;
+    content: "";
+    height: 20px;
+    background: linear-gradient(90deg, #45D1D1 0%, #ED5D5D 51.56%, #F8BF2D 100%);
+    opacity: 0.2;
+    border-radius: 3px;
+}
+.section-1__title--bottom {
+    position: relative;
+    width: fit-content;
+    padding: 0px 16px;
+    margin: 0 auto 40px;
+}
+.section-1__title--bottom::after {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 44px;
+    content: "";
+    height: 20px;
+    background: linear-gradient(90deg, #45D1D1 0%, #ED5D5D 51.56%, #F8BF2D 100%);
+    opacity: 0.2;
+    border-radius: 3px;
+}
+.section-1__text {
+    max-width: 877px;
+    margin: 0 auto 40px;
+}
+.section-1__link {
+    width: 346px;
+}
+.section-2 {
+    padding-bottom: 140px;
+}
+.section-2__title {
+    position: relative;
+    width: fit-content;
+    padding: 0px 16px;
+    margin: 0 auto 56px;
+}
+.section-2__title::after {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 44px;
+    content: "";
+    height: 20px;
+    background: linear-gradient(90deg, #45D1D1 0%, #ED5D5D 51.56%, #F8BF2D 100%);
+    opacity: 0.2;
+    border-radius: 3px;
+}
+.section-2__text {
+    max-width: 880px;
+    margin: 0 auto 56px;
+}
+.section-2__image {
+    display: block;
+    width: 530px;
+    margin: auto;
+}
+.section-3 {
+    padding: 120px 0 140px;
+    background: #F3CC65;
+    border-radius: 24px;
+}
+.section-3__title {
+    position: relative;
+    width: fit-content;
+    padding: 0 16px;
+    margin: auto;
+    color: #FFFFFF;
+}
+.section-3__title::after {
+    position: absolute;
+    height: 20px;
+    left: 0;
+    right: 0;
+    top: 46px;
+    content: "";
+    background: #FFFFFF;
+    opacity: 0.2;
+    border-radius: 3px;
+}
+.section-4 {
+    padding: 120px 0 140px;
+}
+.section-4__number::after {
+    content: "1";
+}
+.section-4__title {
+    margin-bottom: 56px;
+}
+.section-4__text {
+    max-width: 898px;
+    margin: 0 auto 64px;
+    text-align: center;
+}
+.section-4__image {
+    display: block;
+    width: 673px;
+    margin: auto;
+}
+.section-5 {
+    padding: 120px 0 140px;
+    background-image: url(/images/sponsor/section-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.section-5__number::after {
+    content: "2";
+}
+.section-5__title {
+    margin-bottom: 48px;
+}
+.section-5__title--sub {
+    margin-bottom: 56px;
+    font-size: 32px;
+}
+.section-5__text {
+    max-width: 880px;
+    margin: auto;
+    text-align: center;
+}
+.section-6 {
+    padding: 120px 0 140px;
+}
+.section-6__number::after {
+    content: "3";
+}
+.section-6__title {
+    margin-bottom: 56px;
+}
+.section-6__text {
+    max-width: 880px;
+    margin: 0 auto 200px;
+    text-align: center;
+}
+.section-6__image {
+    display: block;
+    width: 600px;
+    margin: auto;
+}
+.section-7 {
+    padding: 120px 0 140px;
+    background-image: url(/images/sponsor/section-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.section-7__title {
+    font-family: 'M PLUS 1', sans-serif;
+    margin-bottom: 56px;
+}
+.section-7__list {
+    display: block;
+    max-width: 580px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    margin: 0 auto 64px;
+}
+.section-7__link {
+    width: 300px;
+}

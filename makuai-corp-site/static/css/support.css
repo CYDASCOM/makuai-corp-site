@@ -1,0 +1,28 @@
+.header__nav-link--support::after {
+    opacity: 1;
+}
+.support-section-1 {
+    padding: 164px 0 112px;
+}
+.support-section-1__heading {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 40px;
+}
+.support-section-1__heading::after {
+    position: absolute;
+    top: 1em;
+    left: -16px;
+    right: -16px;
+    z-index: -1;
+    content: "";
+    height: 0.4em;
+    border-radius: 3px;
+    background: var(--main-heading-decoration);
+    opacity: 0.2;
+}
+.support-section-1__text {
+    max-width: 880px;
+    padding: 0 16px;
+    margin: auto;
+}

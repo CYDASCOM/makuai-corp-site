@@ -1,0 +1,10 @@
+<li class="news__item">
+  {{ with .Resources.GetMatch "thumbnail" }}
+    <img src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}" class="news__image">
+  {{ end }}
+  <div class="news__summary">
+    <p class="news__title">{{ .Title }}</p>
+    <p class="news__text">{{ .Summary }}</p>
+    <a href="{{ .Permalink }}" class="news__link">もっと読む  →</a><p class="news__date">{{ .Date.Format "2006.01.02" }}</p>
+  </div>
+</li>

@@ -1,0 +1,66 @@
+---
+title: "Introduction"
+date: 2022-09-25T13:35:13+09:00
+draft: false
+---
+<head>
+    <link rel="stylesheet" href="/css/introduction.css">
+</head>
+<div class="intro">
+    <h1 class="intro__title">学生の紹介</h1>
+    <pre class="intro__text">2022年度はN名の学生がmakuai Code Boostに参加。
+未経験からはじまり、夢を諦めずにエンジニアとして就職した学生もいます。</pre>
+    <div class="intro__container">
+        <div class="intro__student">
+            <img src="/images/introduction/student1.jpg" class="intro__student-thumb">
+            <div class="intro__student-case">
+                <p class="intro__student-message">スクール卒業後、東京のIT企業に就職しました！</p>
+                <button class="intro__student-button student-1-button intro--active">もっと読む↓</button>
+            </div>
+        </div>
+        <p class="intro__text student-1-text">
+            岐阜県立飛騨高山高校3年情報処理科の大内琉です。趣味はゲームで最近は「valorant」を週末に友達と一緒にプレイしています。<br><br>
+            MakuaiCodeBoostに入学しようと思った理由は中学生の頃からIT企業で働きたいと考えていたからです。MakuaiCodeBoost ではより実践的なことを学ぶことができ、1年間の育成プログラムを修了する頃には即戦力になれるという部分にとても魅力 を感じました。<br><br>
+            MakuaiCodeBoostで学習した言語はhtml&css、javascript、sqlで現在はPHPを学習中です。5月にhtml&css、Javascriptを使ってwebサイトを制作したのですが中々上手くいきませんでした。<br><br>
+            デザイン等もcssで設定しなければならないので中央に文字を寄せるだけでも一苦労し ました。また、Javascript で処理を記述する必要があったため、ネットで調べながら進めていましたが、調べれば調べるほど分からないことが増えていきました。ですが、その度に講師の鈴木さんや、仲間さんに質問をしてなんとか完成させることが出来ました。自分で制作した web サイトが実際に動いているということがとても嬉しくて感動しました。自分でwebサイトやアプリを作ることはとても大変でしたが、少しずつ完成に近づいていくのが楽しいと感じている のでサイト制作中の時間はあっという間に過ぎていきました。<br><br>
+            現在はPHPを使ってTODOリストを制作しているのですが、デザイン制作が苦手で自分がイメージしているデザインに近づけることが中々出来なかったり、そもそも自分にデザイン力が無いと感じているので、企業が制作したクオリティの高いwebサイト等を参考にして克服していきたいと思っています。<br><br>
+            将来は実現力のあるプログラマーになりたいと思っています。今はまだ自分の出来ることの中から技術を選んでTODOリストを制作していますが、自分の頭の中で考えていることをその まま実装出来るくらいの技術力を身につけたいです。特にバックエンドの技術を伸ばしていきたいと考えています。webサイトのデザインをしている時よりもjavascriptなどでコードを書いている時の方が楽しいと感じているので自分の得意な部分をこれからも伸ばしていきたいです。
+        </p>
+        <button class="intro__student-button intro__text-close student-1-close">閉じる↑</button>
+    </div>
+    <div class="intro__container">
+        <div class="intro__student">
+            <img src="/images/introduction/student2.jpg" class="intro__student-thumb">
+            <div class="intro__student-case">
+                <p class="intro__student-message">将来の夢を実現するために、参加を決めました！</p>
+                <button class="intro__student-button student-2-button intro--active">もっと読む↓</button>
+            </div>
+        </div>
+        <p class="intro__text student-2-text">
+            飛騨高山高校３年、情報処理科の鈴木源斗です。吹奏楽部でクラリネットを担当していて、毎日練習に取り組んでいます。趣味はゲーム、筋トレ、映画鑑賞で親と一緒によく自宅で映画を見ます。将来はｗｅｂエンジニアとして働き趣味でゲームを作る生活が今の夢です。
+        </p>
+        <button class="intro__student-button intro__text-close student-2-close">閉じる↑</button>
+    </div>
+</div>
+<script>
+    const student1Button = document.querySelector('.student-1-button');
+    const student2Button = document.querySelector('.student-2-button');
+    const student1Text = document.querySelector('.student-1-text');
+    const student2Text = document.querySelector('.student-2-text');
+    const student1Close = document.querySelector('.student-1-close');
+    const student2Close = document.querySelector('.student-2-close');
+    function toggleStudent1 () {
+        student1Text.classList.toggle('intro--active');
+        student1Button.classList.toggle('intro--active');
+        student1Close.classList.toggle('intro--active');
+    };
+    function toggleStudent2 () {
+        student2Text.classList.toggle('intro--active');
+        student2Button.classList.toggle('intro--active');
+        student2Close.classList.toggle('intro--active');
+    };
+    student1Button.addEventListener('click', toggleStudent1, false);
+    student1Close.addEventListener('click', toggleStudent1, false);
+    student2Button.addEventListener('click', toggleStudent2, false);
+    student2Close.addEventListener('click', toggleStudent2, false);
+</script>

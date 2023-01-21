@@ -1,0 +1,133 @@
+.header-nav-link--introduction::after {
+    opacity: 1;
+}
+.intro {
+    padding: 188px 0 84px;
+}
+.intro__title {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 24px;
+}
+.intro__title::after {
+    position: absolute;
+    top: 1em;
+    left: -16px;
+    right: -16px;
+    z-index: -1;
+    content: "";
+    height: 0.4em;
+    border-radius: 3px;
+    background: var(--main-heading-decoration);
+    opacity: 0.2;
+}
+.intro__text {
+    text-align: center;
+    padding: 0 16px;
+    margin-bottom: 60px;
+}
+.intro__container {
+    max-width: 680px;
+    padding: 0 16px;
+    margin: 0 auto 56px;
+}
+.intro__student {
+    display: flex;
+    gap: 16px;
+}
+.intro__container:nth-child(even) .intro__student {
+    flex-direction: row-reverse;
+}
+.intro__student-thumb {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.intro__student-case {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.intro__student-message {
+    position: relative;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font: normal 700 22px/160% 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.02em;
+    background: #F8BF2D;
+}
+.intro__student-message::after {
+    position: absolute;
+    top: 16px;
+    left: -32px;
+    content: "";
+    border-style: solid;
+    border-width: 0 32px 32px 0;
+    border-color: transparent #F3CC65 transparent transparent;
+}
+.intro__container:nth-child(even) .intro__student .intro__student-case .intro__student-message::after {
+    left: auto;
+    right: -32px;
+    width: 32px;
+    border-width: 32px 32px 0 0;
+    border-color: #F3CC65 transparent transparent transparent;
+}
+.intro__student-button {
+    position: relative;
+    display: none;
+    width: fit-content;
+    padding: 3.5px 32px 7.5px;
+    margin-left: auto;
+    border-width: 1px 1px 4px 1px;
+    border-style: solid;
+    border-color: #333333;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1), inset -6px -9px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    font: normal 700 16px 'Noto Sans JP', sans-serif;
+    color: #333333;
+    text-align: center;
+    margin-top: 16px;
+}
+.intro__student-button::after {
+    content: "";
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+.intro__student-button:hover::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(105deg, rgba(248,191,45,0.2) 0%, rgba(237,93,93,0.2) 16%, rgba(69,209,209,0.2) 32%, rgba(255,255,255,0.2) 50%, rgba(69,209,209,0.2) 68%, rgba(237,93,93,0.2) 84%, rgba(248,191,45,0.2) 100%);
+    content: "";
+    border-radius: 8px;
+    opacity: 1;
+}
+.intro__container:nth-child(even) .intro__student .intro__student-case .intro__student-button {
+    margin-left: 0;
+    margin-right: auto;
+}
+.intro__text {
+    display: none;
+    margin: 24px 0;
+    font: normal 300 16px/180% 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.intro__text-close {
+    display: none;
+    margin-right: auto;
+    margin-top: 0;
+}
+.intro--active {
+    display: block;
+}
+
+@media screen and (max-width: 1039px) {
+    .intro__student-message::after {
+        display: none;
+    }
+    .intro__student, .intro__container:nth-child(even) .intro__student {
+        flex-direction: column;
+    }
+}
