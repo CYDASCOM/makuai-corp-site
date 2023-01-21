@@ -1,86 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Makuai</title>
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.2.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.2.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.2.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>岐阜県高山市に特化した観光・教育のDXベンダー</h2>
-      <h1>Makuai株式会社</h1>
-      <p>コンサルティング、高校生向けIT教育を実施しています</p>
-    </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
-</html>
+<!doctype html><html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Makuai</title><script defer src=/__/firebase/9.2.0/firebase-app-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-auth-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-database-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-firestore-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-functions-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-messaging-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-storage-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-analytics-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-remote-config-compat.js></script>
+<script defer src=/__/firebase/9.2.0/firebase-performance-compat.js></script>
+<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<link rel=stylesheet href=/css/base.css><link rel=stylesheet href=/css/news_page.css><link rel=stylesheet href=/css/layouts/header.css><link rel=stylesheet href=/css/layouts/footer.css><link rel=stylesheet href=/css/layouts/backtotop.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><body><header class=header><span class="header__border header__border--left"></span>
+<span class="header__border header__border--bottom"></span>
+<span class="header__border header__border--right"></span><div class=header__logo><img class=header__logo-img src=/images/layouts/header/makuai_logo.svg><div class=header__logo-text><p class=header__logo-name>CODE BOOST</p><p class=header__logo-catch>高山市の</p><p class=header__logo-catch>高校生向けITスクール</p></div></div><nav id=headerNav class=header__nav><ul type=none id=headerNavList class=header__nav-list><button id=closeMenuButton class=header__close-menu-button><img src=/images/layouts/header/close.svg></button><li id=headerNavItem class=header__nav-item><a href=/ class="header__nav-link header__nav-link--top">ホーム</a></li><li id=headerNavItem class=header__nav-item><a href=/curriculum class="header__nav-link header__nav-link--curriculum">カリキュラム</a></li><li id=headerNavItem class=header__nav-item><a href=/introduction class="header__nav-link header__nav-link--introduction">学生の紹介</a></li><li id=headerNavItem class=header__nav-item><a href=/studentrecruit class=header__nav-link>エンジニアをお探しの企業様</a></li><li id=headerNavItem class=header__nav-item><a href=/support class="header__nav-link header__nav-link--support">支援</a></li><li id=headerNavItem class=header__nav-item><a href=/news class="header__nav-link header__nav-link--news">ニュース</a></li><li id=headerNavItem class=header__nav-item><a href=/contact class="header__nav-link header__nav-link--contact">問い合わせ</a></li><li id=headerNavItem class=header__nav-item><a href=/company class="header__nav-link header__nav-link--company">会社概要</a></li></ul></nav><button id=menuButton class=header__menu-button><img src=/images/layouts/header/menu.svg></button></header><script>const menuButton=document.querySelector("#menuButton"),closeMenuButton=document.querySelector("#closeMenuButton"),headerNav=document.querySelector("#headerNav"),headerNavList=document.querySelector("#headerNavList"),headerNavItem=document.querySelectorAll("#headerNavItem");function switchMenu(e){headerNav.classList.toggle("header__nav--active"),headerNavList.classList.toggle("header__nav-list--active"),menuButton.classList.toggle("header__menu-button--active"),setTimeout(function(){closeMenuButton.classList.toggle("header__close-menu-button--active"),headerNavItem.forEach(function(e){e.classList.toggle("header__nav-item--active")})},e)}menuButton.addEventListener("click",function(){switchMenu(200)}),closeMenuButton.addEventListener("click",function(){switchMenu(0)})</script><head><meta name=generator content="Hugo 0.101.0"><link rel=stylesheet href=/css/Top.css></head><head><link rel=stylesheet href=/css/top.css></head><div class=top-section-1><div class=top-section-1__inner><h1 class=top-section-1__heading>未経験の高校生から</h1><h1 class=top-section-1__heading>エンジニアになろう！</h1><div class=top-section-1__container-1><span class="top-section-1__decoration top-section-1__decoration--left"></span><pre class=top-section-1__text>1年間の本格プログラムでエンジニアとして
+働けるスキルが身につく！</pre><span class="top-section-1__decoration top-section-1__decoration--right"></span></div><div class=top-section-1__container-2><div class=top-section-1__label-box><p class=top-section-1__label-text>岐阜県高山市</p><p class="top-section-1__label-text top-section-1__label-text--bold">限定</p></div><div class=top-section-1__label-box><p class="top-section-1__label-text top-section-1__label-text--center">高校生向け</p></div><div class=top-section-1__label-box><p class="top-section-1__label-text top-section-1__label-text--bold">無料</p><p class=top-section-1__label-text>プログラム</p></div></div><a href=/contact class=top-section-1__link>まずは話を聞いてみる</a></div></div><div class=top-section-2><h1 class=top-section-2__heading>makuai Code Boost とは？</h1><p class=top-section-2__text>岐阜県高山市が開催している「高校生向けの無料プログラミングスクール」です。未来を担うIT人材を輩出するというミッションのもと、本格的な教育を無償提供しています。またmakuai Code Boost では、就職まで継続してサポートを行っており、未経験の高卒採用でIT企業に就職した実績があります。プログラミングの基礎から学習をはじめ、プロのエンジニアとしての仕事スキルまで、開発現場で通用する力を１年間で習得することができるカリキュラムを用意しています。</p><img src=/images/top/welcome.png class=top-section-2__image></div><div class=top-section-3><h1 class=top-section-3__heading>選ばれる４つの理由</h1><div class=top-section-3__container-1><div class=top-section-3__label><span class=top-section-3__label-image></span><p class=top-section-3__label-text>完全無料＆オンライン</p></div><div class=top-section-3__label><span class=top-section-3__label-image></span><p class=top-section-3__label-text>現役エンジニアが講師</p></div><div class=top-section-3__label><span class=top-section-3__label-image></span><p class=top-section-3__label-text>実務レベルの開発体験</p></div><div class=top-section-3__label><span class=top-section-3__label-image></span><p class=top-section-3__label-text>IT企業の就職サポート</p></div></div><img src=/images/top/businessplan.png class=top-section-3__image></div><div class=top-section-4><h1 class=top-section-4__heading>カリキュラムの特長</h1><div class=top-section-4__container-1><p class=top-section-4__text>エンジニアに必要な<br class=top-section-4__text-break><span class=top-section-4__text--bold>的確な技術力<br class=top-section-4__text-break>ヒアリングスキル<br class=top-section-4__text-break>自己スケジュール管理<br class=top-section-4__text-break></span>の３つのスキルを身に付けられるカリキュラムを用意しています。</p><img src=/images/top/finances.png class=top-section-4__image></div><div class=top-section-4__container-2><div class=top-section-4__label><span class="top-section-4__label-circle top-section-4__label-circle--starter"></span><p class=top-section-4__label-text>ブログを個人開発します。HTML、<br>CSS基、PHPなどの開発基礎スキル<br>を習得することができます。</p></div><div class=top-section-4__label><span class="top-section-4__label-circle top-section-4__label-circle--expert"></span><p class=top-section-4__label-text>Webサイトをチーム開発します。より高<br>度な技術スキルを習得し、企業のエンジ<br>ニアとして働けるレベルを目指します。</p></div></div><a href=/curriculum class=top-section-4__link>詳しく見る</a></div><div class=top-section-5><div class=top-section-5__inner><div class=top-section-5__container-1><div class=top-section-5__description><span class=top-section-5__description-label><p class=top-section-5__description-label-text>Point</p></span><p class=top-section-5__description-summary>現役のエンジニアが講師を務めます</p><p class=top-section-5__description-text>現役のフリーランスエンジニアやエンジニア出身経営者が講師を務めます。ただ単にプログラミングの文法を教えるのではなく、可読性・保守性の高いコードを意識して書けるように、コードレビューしていきます。また、最新の技術のトレンドやエンジニアとしてのキャリアのアドバイスもしていきます。</p></div></div><div class=top-section-5__container-2><div class=top-section-5__description><img src=/images/top/hello.png class=top-section-5__description-image><p class=top-section-5__description-summary>実務形式でカリキュラムを進めます</p><p class=top-section-5__description-text>講師がPMとなり、受講生に具体的な仕様をヒアリングしてもらいながら、開発を進めます。 具体的には、issue作成・PR・レビュー・merge・デプロイまでの流れを実践し、実務では当たり前の開発フローを体感していただきます。</p></div></div></div></div><button id=backtotop class=backtotop>
+<img src=/images/layouts/backtotop/arrow.svg></button>
+<script>const backtotop=document.querySelector("#backtotop");backtotop.addEventListener("click",function(){window.scroll({top:0,behavior:"smooth"})})</script><footer class=footer><div class=footer__nav><div class=footer__nav-column><a href=/ class=footer__nav-link>ホーム</a>
+<a href=/curriculum class=footer__nav-link>カリキュラム</a>
+<a href=/introduction class=footer__nav-link>学生の紹介</a></div><div class=footer__nav-column><a href=/company class=footer__nav-link>スポンサー要領</a>
+<a href=/studentrecruit class=footer__nav-link>エンジニアをお探しの企業様</a>
+<a href=/support class=footer__nav-link>支援</a></div><div class=footer__nav-column><a href=/news class=footer__nav-link>ニュース</a>
+<a href=/contact class=footer__nav-link>問い合わせ</a></div><div class=footer__nav-column><a href=/privacy class=footer__nav-link>個人情報保護方針</a>
+<a href=/privacy#statement class=footer__nav-link>個人情報の取り扱いについて</a>
+<a href=/privacy#sookies class=footer__nav-link>クッキー等の利用について</a></div></div><div class=footer__info><p class=footer__info-copyright>©2022 copyright text</p><img src=/images/layouts/footer/instagram.svg class=footer__info-instagram></div></footer><script>document.addEventListener("DOMContentLoaded",function(){const e=document.querySelector("#load");try{let t=firebase.app(),n=["auth","database","firestore","functions","messaging","storage","analytics","remoteConfig","performance"].filter(e=>typeof t[e]=="function");e.textContent=`Firebase SDK loaded with ${n.join(", ")}`}catch(t){console.error(t),e.textContent="Error loading the Firebase SDK, check the console."}})</script></body></html>

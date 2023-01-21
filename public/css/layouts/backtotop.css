@@ -1,0 +1,21 @@
+.backtotop {
+    position: fixed;
+    z-index: 2;
+    bottom: 32px;
+    right: 32px;
+    height: 64px;
+    width: 64px;
+    padding: 13px 20px 14px;
+    background: #FFFFFF;
+    border-width: 1px 1px 4px 1px;
+    border-style: solid;
+    border-color: #333333;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), inset -6px -9px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1039px) {
+    .backtotop {
+        display: none;
+    }
+}
