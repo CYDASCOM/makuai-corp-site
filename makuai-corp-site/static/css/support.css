@@ -2,7 +2,8 @@
     opacity: 1;
 }
 .support-section-1 {
-    padding: 164px 0 112px;
+    padding: 188px 0 112px;
+    overflow-x: clip;
 }
 .support-section-1__heading {
     position: relative;
