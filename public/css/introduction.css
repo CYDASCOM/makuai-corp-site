@@ -1,4 +1,4 @@
-.header-nav-link--introduction::after {
+.header__nav-link--introduction::after {
     opacity: 1;
 }
 .intro {

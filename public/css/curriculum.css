@@ -27,7 +27,8 @@
 }
 .curriculum-section-1__sub-heading {
     display: flex;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 .curriculum-section-1__text {
@@ -39,8 +40,14 @@
     font-weight: 700;
 }
 .carriculum-section-1__decoration {
-    width: 88px;
-    height: 88px;
+    width: 82px;
+    height: 82px;
+}
+.carriculum-section-1__decoration--left {
+    background-image: url('/img/curriculum_diagonal_left.svg');
+}
+.carriculum-section-1__decoration--right {
+    background-image: url('/img/curriculum_diagonal_right.svg');
 }
 .curriculum-section-2 {
     padding: 120px 16px 140px;
@@ -50,7 +57,7 @@
 .curriculum-section-2__heading {
     margin-bottom: 56px;
 }
-.curriculum-section-2__content1, .curriculum-section-2__content2 {
+.curriculum-section-2__content-1, .curriculum-section-2__content-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -59,12 +66,16 @@
     max-width: 920px;
     margin: auto;
 }
-.curriculum-section-2__content1 {
+.curriculum-section-2__content-1 {
     margin-bottom: 120px;
+}
+.curriculum-section-2__content-2 {
+    margin-bottom: 48px;
 }
 .curriculum-section-2__item {
     position: relative;
     z-index: 0;
+    width: fit-content;
     font: var(--main-item-font);
     color: var(--main-item-color);
     letter-spacing: 0.02em;
@@ -119,8 +130,6 @@ li.curriculum-section-2__desc::before {
 .curriculum-section-3__text {
     max-width: 880px;
     margin: auto;
-    font: var(--main-text-font);
-    color: var(--main-text-color);
 }
 .curriculum-section-4 {
     padding: 120px 16px 140px;
@@ -246,13 +255,26 @@ p.curriculum-section-4__data:not(:last-child)::after {
 .curriculum-section-5__text {
     max-width: 880px;
     margin: 0 auto 64px;
-    font: var(--main-text-font);
-    color: var(--main-text-color);
-    letter-spacing: 0.02em;
 }
 .curriculum-section-5__img {
     display: block;
     width: 80%;
     max-width: 456px;
     margin: auto;
+}
+
+@media screen and (max-width: 1039px) {
+    .carriculum-section-1__decoration {
+        display: none;
+    }
+    .curriculum-section-2__content-1, .curriculum-section-2__content-2 {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .curriculum-section-2__desc {
+        width: 100%;
+    }
+    .curriculum-section-2__frame {
+        width: 100%;
+    }
 }

@@ -142,7 +142,7 @@
     height: 40px;
     left: -13.5px;
     top: -13.5px;
-    background-image: url('/images/contact/checkbox.svg');
+    background-image: url('/img/checkbox.svg');
 }
 .contact__form-checkbox-button:checked::after {
     position: absolute;
@@ -151,7 +151,7 @@
     height: 18px;
     top: -4px;
     left: 0;
-    background-image: url('/images/contact/checked.svg');
+    background-image: url('/img/checked.svg');
 }
 .contact__form-checkbox-text {
     font-family: 'Noto Sans JP', sans-serif;
