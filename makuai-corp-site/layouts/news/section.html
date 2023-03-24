@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="max-w-[57rem] pt-[7.5rem] pb-10 px-4 mx-auto">
+    <h1 class="heading relative w-fit mx-auto mb-8 md:mb-16 text-makuai-black font-bold text-[2rem] md:text-[3rem] leading-normal font-Noto text-center after:opacity-20 after:absolute after:-left-2 md:after:-left-4 after:-right-2 md:after:-right-4 after:top-[1em] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] gradation after:content-['']">ニュース</h1>
+    <ul class="list-none">
+        {{ $paginator := .Paginate (where .Pages "Type" "news") }}
+        {{ range $paginator.Pages }}
+            {{ .Render "li" }}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

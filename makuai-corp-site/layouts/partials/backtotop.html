@@ -1,0 +1,9 @@
+<button id="backtotop" class="hidden md:block fixed right-8 bottom-8 w-16 h-16 border-t-[0.0625rem] border-x-[0.0625rem] border-b-4 border-makuai-black rounded-lg shadow-[0px_-4px_15px_rgba(0,0,0,0.1),_inset_-6px_-9px_0px_rgba(0,0,0,0.07)] bg-[url(/img/backtotop/arrow.svg)] bg-center bg-no-repeat bg-[rgba(255,255,255,1)]"></button>
+<script>
+    document.querySelector('#backtotop').addEventListener('click', function() {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>

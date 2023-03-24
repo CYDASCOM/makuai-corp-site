@@ -1,0 +1,49 @@
+<header class="header flex justify-between items-center fixed z-10 w-screen h-[6.25rem] px-8 lg:px-12 border-b bg-white/75 backdrop-blur-xl">
+    <div class="flex gap-x-6">
+        <img src="/img/header/logo.svg" alt="makuai_logo" width="162">
+        <div class="hidden lg:flex flex-col justify-center">
+            <p class="font-bold text-[1.125rem] leading-[145%] font-Noto tracking-[.1em]">CODE BOOST</p>
+            <p class="font-medium text-[0.875rem] leading-[145%] font-Noto tracking-[.1em]">高山市の高校生向けITスクール</p>
+        </div>
+    </div>
+    <div class="header-nav-blind hidden md:block lg:hidden invisible opacity-0 fixed top-0 left-0 w-screen h-screen bg-[#dddddd] transition duration-200"></div>
+    <div class="header-nav flex flex-col lg:flex-row gap-x-6 gap-y-4 invisible lg:visible opacity-0 lg:opacity-100 absolute lg:static top-0 left-0 md:left-auto md:right-0 z-0 md:translate-x-full lg:translate-x-0 w-screen md:w-80 lg:w-auto h-screen lg:h-auto px-8 py-[1.625rem] lg:p-0 bg-white lg:bg-transparent text-makuai-black font-medium leading-[300%] font-Noto transition duration-200">
+        <button class="header-nav-close lg:hidden self-end w-12 h-12 bg-[url('/img/header/nav-button-close.svg')]"></button>
+        <a href="/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0 after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">ホーム</a>
+        <a href="/curriculum/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0  after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">カリキュラム</a>
+        <a href="/introduction/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0  after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">学生の紹介</a>
+        <a href="/studentrecruit/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0  after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">エンジニアをお探しの企業様</a>
+        <a href="/support/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0  after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">支援</a>
+        <a href="/news/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0  after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">ニュース</a>
+        <a href="/contact/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0  after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">問い合わせ</a>
+        <a href="/company/" class="header-nav-link relative w-fit after:opacity-0 hover:after:opacity-20 after:absolute after:left-0 after:right-0  after:top-[1.75rem] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-gradient-to-r after:from-makuai-cyan after:via-makuai-red after:to-makuai-yellow after:content-[''] after:transition after:duration-500">会社概要</a>
+    </div>
+    <button class="header-nav-open lg:hidden w-12 h-12 bg-[url('/img/header/nav-button-open.svg')]"></button>
+</header>
+<script>
+    /* ナビゲーションバー　カレント表示 */
+    const headerNavLink = document.querySelectorAll('.header-nav-link');
+
+    headerNavLink.forEach((targetLink) => {
+        if (targetLink.href === location.href) {
+            targetLink.classList.add('after:opacity-20');
+        }
+    });
+
+    /* ナビゲーションバー　アニメーション */
+    const headerNavOpen = document.querySelector('.header-nav-open');
+    const headerNavClose = document.querySelector('.header-nav-close');
+    const headerNavBlind = document.querySelector('.header-nav-blind');
+
+    function switchMenu() {
+        document.querySelector('.header-nav').classList.toggle('invisible');
+        document.querySelector('.header-nav').classList.toggle('opacity-100');
+        document.querySelector('.header-nav').classList.toggle('md:translate-x-0');
+        document.querySelector('.header-nav-blind').classList.toggle('invisible');
+        document.querySelector('.header-nav-blind').classList.toggle('md:opacity-[.88]');
+    }
+
+    headerNavOpen.addEventListener('click', switchMenu);
+    headerNavClose.addEventListener('click', switchMenu);
+    headerNavBlind.addEventListener('click', switchMenu);
+</script>

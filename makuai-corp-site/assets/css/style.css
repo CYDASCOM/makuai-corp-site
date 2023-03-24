@@ -1,0 +1,35 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ヘッダー　グラデーションボーダー */
+.header {
+    border-image: linear-gradient(to right, #45D1D1, #ED5D5D, #F8BF2D) 1;
+}
+
+/* 見出し装飾 */
+.heading.none::after {
+    content: none;
+}
+.heading.gradation::after {
+    background: linear-gradient(to right, #45D1D1 0%, #ED5D5D 51.56%, #F8BF2D 100%);
+}
+.heading.light::after {
+    background: #FFFFFF;
+}
+
+/* テキストハイライト */
+.text-highlight.red {
+    color: #ED5D5D;
+}
+.text-highlight.strong {
+    font-weight: 700;
+}
+
+/* ボタン/ボタンリンクホバー背景 */
+.button::after {
+    background-image: linear-gradient(105deg, rgba(248, 191, 45, 0.2) 0%, rgba(237, 93, 93, 0.2) 16%, rgba(69, 209, 209, 0.2) 32%, rgba(255, 255, 255, 0.2) 50%, rgba(69, 209, 209, 0.2) 68%, rgba(237, 93, 93, 0.2) 84%, rgba(248, 191, 45, 0.2) 100%);
+}

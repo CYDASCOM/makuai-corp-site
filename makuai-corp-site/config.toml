@@ -1,5 +1,6 @@
 baseURL = 'https://makuai.co.jp/'
 languageCode = 'ja-JP'
 title = 'Makuai, Inc.'
-theme = "hugo-universal-theme"
 publishDir = "../public"
+[params]
+    customCSS = ["/dist/css/output.css"]

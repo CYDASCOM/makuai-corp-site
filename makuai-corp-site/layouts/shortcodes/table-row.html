@@ -1,0 +1,15 @@
+<tr>
+    <th class="block lg:table-cell max-w-full p-0 align-top whitespace-nowrap"><p class="relative w-fit opacity-70 text-makuai-black font-bold text-[1.25rem] leading-[180%] font-MPlus1Code after:opacity-20 after:absolute after:-left-1 after:-right-1 after:top-[1em] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] after:bg-makuai-yellow after:content-['']">{{ with .Get "header" }}{{ . }}{{ end }}</p></th>
+    <td class="block lg:table-cell p-0 text-makuai-black font-light text-[1rem] leading-[225%] font-Noto">{{ .Inner }}</td>
+</tr>
+<!--
+    テーブル行
+        呼び出し方法
+            閉じタグあり
+        プロパティ
+            header: ヘッダー
+        備考
+            table.htmlと併用
+            classプロパティを指定した呼び出し時のスタイルの改変 未設定
+            プロパティではなく閉じタグ式で中身を指定することで中身の自由度を持たせています。
+-->

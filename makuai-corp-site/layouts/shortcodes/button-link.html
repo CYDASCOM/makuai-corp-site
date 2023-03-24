@@ -1,0 +1,12 @@
+<a href="{{ with .Get "href" }}{{ . }}{{ end }}" target="{{ with .Get "target" }}{{ .}}{{ end }}" class="button block relative w-fit px-[1.875rem] py-3 mx-auto mb-8 lg:mb-12 border-t-[0.0625rem] border-x-[0.0625rem] border-b-4 border-makuai-black rounded-lg shadow-[0px_-4px_15px_rgba(0,0,0,0.1),_inset_-6px_-9px_0px_rgba(0,0,0,0.07)] bg-[rgba(255,255,255,1)] text-makuai-black font-bold text-[1.125rem] leading-normal after:block after:opacity-0 hover:after:opacity-100 after:absolute after:inset-0 after:rounded-lg after:content-[''] after:transition after:duration-[800ms] {{ with .Get "class" }}{{ . }}{{ end }}">{{ with .Get "text"}}{{ . }}{{ end }}</a>
+<!--
+    ボタンリンク
+        呼び出し方法
+            閉じタグ無し
+        プロパティ
+            text: テキスト
+            href: href属性
+            target: target属性
+        備考
+            ボタンの見た目をしたリンクです
+-->

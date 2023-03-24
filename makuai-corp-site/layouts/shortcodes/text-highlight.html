@@ -1,0 +1,15 @@
+<span class="text-highlight {{ with .Get "color" }}{{ . }}{{ end }} {{ with .Get "weight" }}{{ . }} {{ end }}{{ with .Get "class" }}{{ . }}{{ end }}">{{ .Inner }}</span>
+<!--
+    本文ハイライト
+        呼び出し方法
+            閉じタグあり
+        プロパティ
+            color: ハイライトの色
+            weight: フォントの太さ
+        ハイライトの色
+            赤: red
+        フォントの太さ
+            強調: strong
+        備考
+            ハイライトしたい部分をタグで囲む
+-->
