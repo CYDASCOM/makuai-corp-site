@@ -1,0 +1,16 @@
+<h1 class="heading relative w-fit mx-auto mb-8 md:mb-16 text-makuai-black font-bold {{ if .Get "text" }}{{ if gt (.Get "text" | strings.RuneCount) 10 }}text-[1.5rem]{{ else }}text-[2rem]{{ end }}{{ end }} md:text-[3rem] leading-normal font-Noto text-center after:opacity-20 after:absolute after:-left-2 md:after:-left-4 after:-right-2 md:after:-right-4 after:top-[1em] after:-z-10 after:h-[0.4em] after:rounded-[0.1875rem] {{ with .Get "decoration" }}{{ . }}{{ end }} after:content-[''] {{ with .Get "class" }}{{ . }}{{ end }}">{{ with .Get "text" }}{{ . }}{{ end }}</h1>
+<!--
+    見出し
+        呼び出し方法
+            閉じタグ無し
+        プロパティ
+            text: テキスト
+            decoration: 装飾
+        装飾の種類
+            gradation: グラデーション
+            light: 不透明度10%の白色
+            none: 装飾無し
+        備考
+            表示サイズ1039px以下の場合
+            文字数に応じてフォントのサイズが変わります。
+-->

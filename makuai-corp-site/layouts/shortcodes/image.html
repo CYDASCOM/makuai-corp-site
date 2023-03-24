@@ -1,0 +1,12 @@
+<img src="{{ with .Get "src" }}{{ . }}{{ end }}" alt="{{ with .Get "alt" }}{{ . }}{{ end }}" class="block mx-auto mb-8 md:mb-16 {{ with .Get "class" }}{{ . }}{{ end }}" style="width: min(80%, {{ with .Get "width" }}{{ . }}{{ end }}px);">
+<!--
+    画像
+        呼び出し方法
+            閉じタグ無し
+        プロパティ
+            src: src属性
+            alt: alt属性
+            width: 画像のサイズ 単位はpx
+        備考
+            特になし
+-->

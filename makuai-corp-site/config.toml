@@ -2,3 +2,5 @@ baseURL = 'https://makuai.co.jp/'
 languageCode = 'ja-JP'
 title = 'Makuai, Inc.'
 publishDir = "../public"
+[params]
+    customCSS = ["/dist/css/output.css"]
